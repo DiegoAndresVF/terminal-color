@@ -1,3 +1,4 @@
+feature/equipoA
 // Importamos la librería chalk
 import chalk from 'chalk';
 
@@ -8,10 +9,6 @@ console.warn(chalk.yellow('⚠️ Atención: Esto puede ponerse colorido.'));
 console.error(chalk.red('❌ Error simulado: algo salió demasiado bien.'));
 console.log(chalk.magenta('💡 Recuerda: la práctica hace al programador.')); */
 
-// BONUS: función básica
-function saludar(nombre) {
-  console.log(chalk.cyan(`Hola ${nombre}, ¡bienvenido al mundo JavaScript! 🌍`));
-}
 
 function simularError() {
   console.warn(chalk.yellow('⚠️ Advertencia: Algo podría salir mal...'));
@@ -20,5 +17,24 @@ function simularError() {
 }
 
 // Prueba de función
-saludar("Equipo JS");
-simularError();
+
+function mostrarEstado(estado) {
+    switch(estado) {
+        case "inicio":
+            console.log("inicio del programa");
+            break;
+        case "proceso":
+        simularError();
+            console.log("proceso en ejecución");
+            break;
+        case "final":
+            console.log("finalización exitosa.");
+            break;
+        default:
+            console.log("opcion invalida");
+    }
+}
+
+mostrarEstado("proceso")
+=======
+main

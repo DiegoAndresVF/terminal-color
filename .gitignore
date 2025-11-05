@@ -139,6 +139,10 @@ dist
 # Optional stylelint cache
 
 # SvelteKit build / generate output
+feature/equipoA
+.svelte-kit
+=======
 .svelte-kit
 
 # End of https://www.toptal.com/developers/gitignore/api/node
+main
