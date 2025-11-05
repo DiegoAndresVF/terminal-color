@@ -1,4 +1,4 @@
-feature/equipoA
+
 // Importamos la librería chalk
 import chalk from 'chalk';
 
@@ -21,20 +21,22 @@ function simularError() {
 function mostrarEstado(estado) {
     switch(estado) {
         case "inicio":
-            console.log("inicio del programa");
-            break;
+            console.log(chalk.blue('👋Iniciaste el programa!'));           
+             break;
         case "proceso":
         simularError();
-            console.log("proceso en ejecución");
+            console.log(chalk.grey('⏰ Ejecutanding...'));
             break;
         case "final":
-            console.log("finalización exitosa.");
+            console.log(chalk.magenta('💡 Listo! terminamos :D'));
             break;
         default:
-            console.log("opcion invalida");
-    }
+            console.log(chalk.cyan(`Jjajaj te equivocaste! Opcion invalida 👨‍🦽 `));
 }
+    }
 
+
+mostrarEstado("inicio")
 mostrarEstado("proceso")
-=======
-main
+mostrarEstado("final")
+mostrarEstado("asdf")
